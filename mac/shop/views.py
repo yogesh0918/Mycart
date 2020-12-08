@@ -73,7 +73,7 @@ def login(request):
             return render(request,'shop/login.html')
         else:
             messages.info(request, 'Plese register first')
-            return redirect('/')
+            return HttpResponse('Plese Register First OR Enter Correct Username & Password')
     else:
         return render(request,'shop/login.html')
 
