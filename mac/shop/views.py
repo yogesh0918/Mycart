@@ -70,6 +70,7 @@ def login(request):
         user=auth.authenticate(username=username,password=password)
         if user is None:
             auth.login(request,user)
+            return HttpResponse('Plese Register First OR Enter Correct Username & Password')
             return render(request,'shop/login.html')
         else:
             messages.info(request, 'Plese register first')
