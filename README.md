@@ -1,2 +1,2 @@
 # Mycart
-E-commerce web using django
+E-commerce web using djang
